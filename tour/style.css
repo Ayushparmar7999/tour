@@ -1,0 +1,633 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=REM:wght@600;700&family=Roboto+Condensed:wght@300;400&family=Roboto:wght@500&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+}
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: rgb(6, 96, 126);  */
+    height: 110px;
+    background: linear-gradient(rgb(5, 53, 68), rgb(16, 127, 164), rgb(17, 148, 195));
+}
+.nav-menu ul {
+    display: flex;
+    margin-right: 70px;
+    margin-top: 30px;
+}
+
+.logo img {
+    margin-left: 90px;
+    margin-top: 30px;
+}
+
+.nav-menu ul li {
+    margin-right: 45px;
+    margin-top: 25px;
+
+}
+
+.nav-menu ul li a {
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
+
+}
+.nav-menu ul li a:hover{
+    color: rgb(3, 5, 29);
+    text-decoration: underline;
+}
+
+.burger-menu {
+    color: white;
+    float: right;
+    font-size: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+    margin-top: -25px;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width:950px) {
+
+
+
+    .nav-menu ul li a {
+        font-size: 16px;
+
+    }
+}
+
+@media (max-width:850px) {
+    .burger-menu {
+        display: block;
+        font-size: 40px;
+        margin-top: 10px;
+    }
+
+    .nav-menu ul {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: #2c3e50;
+        top: 58px;
+        left: -100%;
+        text-align: center;
+        display: block;
+    }
+
+    .nav-menu ul li {
+        display: block;
+        margin-top: 50px;
+    }
+
+    .nav-menu ul li a {
+        font-size: 20px;
+    }
+
+    .nav-menu ul li a:hover {
+        background-color: black;
+        padding: 2%;
+        border-radius: 5px;
+    }
+
+    #check:checked~.nav-menu ul {
+        left: 0;
+    }
+}
+
+/* home section start  */
+
+.background-image {
+
+    background-image:url("/media/banner.jpg");
+    width: 1210px;
+    height: 750px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.america {
+    font-size: 120px;
+    font-family: 'REM', sans-serif;
+
+    margin-left: 400px;
+    padding-top: 15px;
+    /* color: rgb(242, 85, 28); */
+    color: rgb(65, 201, 254);
+    font-weight: 800px;
+    opacity: 0.9;
+
+}
+
+.amazing {
+    font-family: 'REM', sans-serif;
+    margin-left: 280px;
+    color: white;
+    font-weight: 900;
+    font-size: 120px;
+    margin-top: -35px;
+
+
+}
+
+.background-image button {
+    width: 190px;
+    height: 55px;
+    border-radius: 200px;
+    margin-left: 550px;
+    margin-top: 100px;
+    border: none;
+    color: white;
+    background-color: rgb(246, 79, 19);
+}
+
+button a {
+    color: white;
+    font-size: 17px;
+}
+
+.background-image button:hover {
+    background: none;
+    border: 2px solid rgb(246, 79, 19);
+}
+
+.form {
+    background-color: white;
+    opacity: 0.8;
+    margin-top: 90px;
+    height: 280px;
+    width: 1000px;
+    margin-left: 100px;
+}
+
+.form.min {
+    width: 50px;
+    height: 250px;
+}
+
+.min input {
+    width: 210px;
+    height: 30px;
+    background-color: white;
+    margin-left: 20px;
+}
+
+.first-line {
+    display: flex;
+}
+
+.second-line {
+    display: flex;
+    margin-top: 35px;
+}
+
+.min {
+    height: 20px;
+    margin-left: 30px;
+    padding-top: 20px;
+    font-weight: 900;
+}
+
+.min p {
+    color: black;
+    margin-bottom: 10px;
+
+    margin-left: 20px;
+    font-size: 18px;
+
+}
+
+.first-line button {
+
+    background-color: rgb(246, 79, 19);
+    color: black
+}
+
+.find-your {
+    background-color: white;
+    width: 130px;
+    height: 40px;
+    color: red;
+    margin-left: 100px;
+    /* margin-top: 500px; */
+    padding-left: 7px;
+    margin-bottom: -85px;
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: 550;
+}
+
+
+/* about section  */
+.about {
+    margin-top: 50px;
+}
+
+.heading {
+    margin-left: 260px;
+    display: flex;
+    font-family: 'REM', sans-serif;
+    font-size: 26px;
+    font-weight: 950;
+
+}
+
+.about p {
+
+    margin-top: 35px;
+    margin-left: 110px;
+    margin-right: 110px;
+    font-size: 20px;
+    font-weight: lighter;
+}
+.about label {
+    font-size: 20px;
+    font-weight: lighter;
+    margin-bottom: 90px;
+    margin-left: 390px;
+    margin-top: -90px;
+}
+
+.aeroplane-box {
+    width: 970px;
+    height: 360px;
+    margin-top: 100px;
+    margin-left: 70px;
+    /* margin-right: 300px; */
+    display: flex;
+    position: absolute;
+    border: 18px solid rgb(16, 127, 164);
+    box-shadow: 5px 5px 5px 5px black;
+    background-color: rgb(205, 198, 193);
+
+}
+
+.aeroplane-box p {
+    margin: -0px;
+    line-height: 35px;
+    margin-right: -190px;
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+.aeroplane-box img {
+    position: relative;
+    left: 180px;
+    bottom: 70px;
+    width: 100%;
+    height: 130%;
+
+}
+.about button {
+    width: 190px;
+    height: 55px;
+    border-radius: 200px;
+    margin-left: 510px;
+    margin-top: 550px;
+    border: none;
+    color: white;
+    background-color: rgb(246, 79, 19);
+}
+
+.about button a {
+    color: white;
+    font-size: 17px;
+}
+
+.about button:hover {
+    background-color: black;
+}
+/* travel section  */
+
+.heading1{
+    margin-left: 240px;
+    margin-top: 60px;
+    font-family: 'REM', sans-serif;
+    font-size: 22px;
+    font-weight: 950;
+}
+
+.travel p {
+
+    margin-top: 35px;
+    margin-left: 70px;
+    margin-right: 50px;
+    font-size: 21px;
+    font-weight: lighter;
+}
+
+.travel label {
+    font-size: 21px;
+    font-weight: lighter;
+    margin-bottom: 90px;
+    margin-left: 240px;
+
+}
+.category-containers{
+    display: flex;
+}
+.different{
+    margin-left: 20px;
+    margin-top: 60px;
+    background-color: white;
+    width: 290px;
+    justify-content: center;
+    /* border: 2px solid black; */
+}
+
+.different img{
+    margin-left: 60px;
+}
+.different h3{
+
+    font-family: 'REM', sans-serif;
+    margin-bottom: 10px;
+    margin-left: 55px;
+    font-size: 22px;
+
+}
+.different p{
+    margin: 0px;
+    margin-bottom: 20px;
+    margin-left: 25px;
+    /* font-size: 25px; */
+}
+
+.different button {
+    width: 190px;
+    height: 55px;
+    border-radius: 200px;
+    margin-left: 38px;
+    margin-top: 20px;
+    border: none;
+    color: white;
+    background-color: rgb(246, 79, 19);
+}
+
+.different button a {
+    color: white;
+    font-size: 19px;
+}
+
+.different button:hover {
+    background-color: black;
+}
+.heading2 h3{
+    margin-top: 100px;
+    font-family: 'REM', sans-serif;
+    margin-bottom: 10px;
+    margin-left: 290px;
+    font-size: 40px;
+    font-weight: 950;
+}
+.travel p {
+
+    margin-top: 35px;
+    margin-left: 70px;
+    margin-right: 50px;
+    font-size: 21px;
+    font-weight: lighter;
+}
+
+.travel label {
+    font-size: 21px;
+    font-weight: lighter;
+    margin-bottom: 90px;
+    margin-left: 240px;
+
+}
+.weekend-london img {
+    margin-top: 30px;
+    width: 1200px;
+    height: 220px;
+}
+.heading3 h3{
+    margin-top: 100px;
+    font-family: 'REM', sans-serif;
+    margin-bottom: 10px;
+    margin-left: 460px;
+    font-size: 40px;
+    font-weight: 950;
+}
+
+.best-images-containers{
+    margin-top: 50px;
+    margin-left: 37px;
+}
+.best-images-containers img{
+    margin-left: 6px;
+}
+.best-content-containers{
+    display: flex;
+}
+.contents{
+    border-radius: 90px;
+    padding-top: 20px;
+}
+.contents label
+{
+    margin-left: 44px;
+    font-weight: bolder;
+    font-size: 26px;
+}
+.contents p{
+    margin: 0px;
+    margin-right: 80px;
+    margin-left: 43px;
+    font-size: 19px;
+    color: #2c3e50;
+}
+
+.london-image{
+    background-image:url("/media/pexels-photo-230794.webp");
+    width: 1210px;
+    height: 580px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+}
+
+/* london tour section start  */
+.heading4 h3 {
+    font-family: 'REM', sans-serif;
+    margin-left: 340px;
+    font-size: 40px;
+    font-weight: 950;
+    color: white;
+    padding-top: 150px;
+}
+.london-image p{
+    color: white;
+    padding: 40px;
+    margin-top: -15px;
+    line-height: 29px;
+}
+
+
+/* london tour button  */
+
+.button {
+    margin-left: 420px;
+
+}
+.button button {
+    width: 190px;
+    height: 55px;
+    border-radius: 200px;
+    margin-left: 20px;
+    margin-top: 50px;
+    border: none;
+    color: white;
+    background-color: rgb(246, 79, 19);
+}
+
+.button button a {
+    color: white;
+    font-size: 17px;
+}
+
+.button button:hover {
+    background-color: black;
+}
+.blog h1{
+    margin-top: 100px;
+    font-family: 'REM', sans-serif;
+    margin-bottom: 10px;
+    margin-left: 550px;
+    font-size: 50px;
+    font-weight: 950;
+}
+
+.blog p{
+    font-size: 22px;
+    margin-left: 400px;
+}
+.blog-image {
+    margin-top: 60px;
+}
+.blog-image img{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+
+}
+.comments{
+    display: flex;
+    justify-content: space-between;
+}
+.comments li {
+    margin-left: 30px;
+    margin-right: 90px;
+}
+.london-contents label{
+    margin-left: 40px;
+    margin-top: 20px;
+    font-size: 30px;
+
+}
+.london-contents p{
+    margin-left: -4px;
+    padding: 30px;
+    font-size: 20px;
+    color: #2c3e50;
+
+}
+
+/* footer section start  */
+.footer{
+    color: white;
+    background-color:rgb(5, 53, 68) ;
+    height: 450px;
+}
+.footer-containers{
+    display: flex;
+    margin-left: 40px;
+}
+.social-media{
+   margin-top: 10px;
+   margin-left: 15px;
+}
+.column1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-top: 100px;
+}
+.column1 h1{
+    margin: 15px;
+    font-size: 34px;
+    font-weight: 800;
+
+}
+.column1 p{
+    font-size: 19px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.column2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-top: 100px;
+
+}
+.column2 h1{
+    margin: 15px;
+    font-size: 34px;
+    font-weight: 800;
+
+}
+.column2 p{
+    font-size: 19px;
+    margin-left: 20px;
+    margin-top: 10px;
+} 
+.column2 p a{
+    color: white;
+}
+
+
+.column3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-top: 100px;
+
+}
+.column3 h1{
+    margin: 15px;
+    font-size: 34px;
+    font-weight: 800;
+
+}
+.name input{
+    width: 220px;
+    height: 35px;
+    margin-left: 1px;
+}
+.ractangle input{
+    width: 450px;
+    height: 60px;
+    margin-top: 20px;
+}
+.column3 button{
+    width: 150px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    margin-left: 300px;
+    margin-top: 20px;
+}
+.footer-nav p{
+    margin-left: 440px;
+    margin-top: 10px;
+}
